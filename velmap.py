@@ -9,12 +9,13 @@ PURPOSE: A Library of tools to generate, compare, test, etc. custom colour maps
         The third map is fully customizable and the defaults are set such that one a white background the vividness of the blue is enhanced relative to the decreased chroma of the red. 
         
 AUTHORS: Gilles Ferrand, Mark Richardson, Jayanne English
-DATE: Last Edited: 2024-06-28 J.E. Added uniform colour map.
+DATE: Last Edited: 2025-02-25 to accommodate contour plotting and grids of figures. 
 
 FUNCTIONS:
     __stretch__
     create_cmap_velocity
     create_cmap_doubleVelocity
+
 """
 # Imports
 import numpy as np
