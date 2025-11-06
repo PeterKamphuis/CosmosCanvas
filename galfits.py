@@ -17,6 +17,7 @@ import numpy as np
 #  Changes Jan. 8/23 -- added figsize as a parameter rather than hard coded. J.E. and Gilles Ferrand.
 #  Changes Aug. 15/23 -- created a method get_galaxy_data which makes the data cut according to RA/DEC so users can 
 #                        do more with their data and make more custom plots.
+# Changes Feb. 25/25 -- to accommodate contour plotting and creating panels of plots. 
 
 import astropy.units as u
 from astropy.wcs import WCS
@@ -71,7 +72,7 @@ def plot_galaxy(fits_file,RA,DEC,ImgSize,shift,cmap,min_value=None,max_value=Non
     ax = fig.add_subplot(1,1,1,projection=w_cut)
 
     cim = ax.imshow(h_cut, cmap=plt.get_cmap(cmap,nsteps), vmin=min_value, vmax=max_value)
-    plt.xlabel('RA (J2000)')
+    plt.xlabel('RA (J2000)') 
     plt.ylabel('Dec (J2000)')
     plt.title(title)
 
