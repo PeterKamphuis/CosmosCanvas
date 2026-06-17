@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CosmosCanvas"
+dynamic = ["version"]
+description = "Development Status :: 4 - Beta"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+authors = [
+    { name = "Mark Richardson, Jayanne English, Gilles Ferrand and Nathan Deg", email = "" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+dependencies = [ 'numpy>=1.14',
+    'matplotlib',
+    'scipy',
+    'psutil',
+    'astropy',
+    'future-fstrings',
+    'colourspace>=2.0-dev1',
+    
+]
+
+[project.urls]
+Homepage = "https://github.com/mlarichardson/CosmosCanvas"
+
+[project.scripts]
+
+
+[tool.hatch.version]
+path = "version.py"
+
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/CosmosCanvas",
+]
