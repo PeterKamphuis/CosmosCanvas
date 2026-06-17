@@ -1,1 +1,1 @@
-recursive-include make_moments/ *.py
+recursive-include CosmosCanvas/ *.py
