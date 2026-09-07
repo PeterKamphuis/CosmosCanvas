@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "CosmosCanvas"
+name = "cosmoscanvas"
 dynamic = ["version"]
 description = "Development Status :: 4 - Beta"
 readme = "README.md"
@@ -26,7 +26,7 @@ dependencies = [ 'numpy>=1.14',
     'psutil',
     'astropy',
     'future-fstrings',
-    'colourspace>=2.0-dev1',
+    'colourspace-explorer>=1.5',
     
 ]
 
