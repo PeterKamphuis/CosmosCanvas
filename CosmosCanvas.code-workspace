@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../pk_common_functions"
+		},
+		{
+			"path": "../colourspace"
+		}
+	],
+	"settings": {}
+}
